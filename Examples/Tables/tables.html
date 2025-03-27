@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <title>HTML Tables</title>
+    <link rel='stylesheet' href='tables.css'/>
+  </head>
+  <body>
+    <h1>Using Tables</h1>
+    <h2>This is a simple HTML Table</h2>
+    <table> <!-- HTML table tag -->
+        <tr> <!-- Starting a row -->
+            <td>Cell 1</td> <!-- Information gows here -->
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+        </tr>
+        <tr>
+            <td>Cell 4</td>
+            <td>Cell 5</td>
+            <td>Cell 6</td>
+        </tr>
+  </table>
+  <hr>
+  
+  <h2>This is a Table using Headers</h2>
+    <table>
+         <tr>
+            <th>First Name</th> <!-- Gives a table header -->
+            <th>Last Name</th>
+            <th>Email Address</th>
+        </tr>
+        <tr>
+            <td>Hillary</td>
+            <td>Nyakundi</td>
+            <td>tables@mail.com</td>
+        </tr>
+        <tr>
+            <td>Lary</td>
+            <td>Mak</td>
+            <td>developer@mail.com</td>
+        </tr>
+      </table>
+      <hr>
+      
+      <h2>Using Captions with a Table</h2>
+      <table>
+        <caption><strong>Table1 - Free Coding Resources</strong></caption>
+        <tr>
+          <th>Sites</th>
+          <th>Youtube Channels</th>
+          <th>Mobile Apps</th>
+        </tr>
+        <tr>
+          <td>Freecode Camp</td>
+          <td>Freecode Camp</td>
+          <td>Enki</td>
+        </tr>
+        <tr>
+          <td>W3Schools</td>
+          <td>Academic</td>
+          <td>Programming Hero</td>
+        </tr>
+        <tr>
+          <td>Khan Academy</td>
+          <td>The Coding Train</td>
+          <td>Solo learn</td>
+        </tr>
+      </table>
+      
+      <hr>
+      <h2>Using the Scope Attribute</h2>
+      <p>The scope attribute is used to define whether a specific header is intended for either a column, row, or a group of both. </p>
+
+      <p>The main purpose of the <strong>scope</strong> element is to show the target data so that the user does not have to rely on assumptions. The attribute is declared in the header cell &lt; th &gt;, and it takes the values <em>col, row, colgroup and rowgroup</em>.</p>
+
+      <p>The values col and row indicated that the header cell is providing inforamation for either the rows or columns respectively.</p>
+
+      <table>
+          <caption><strong>Table 2 - Scope Element</strong></caption>
+          <tr>
+          <th>
+            <th scope="col">Semester</th>
+            <th scope="col">Grade</th>
+          </th>
+          </tr>
+        
+          <tr>
+            <td>1</td>
+            <td>Jan - April</td>
+            <td>Credit</td>
+          </tr>
+        
+          <tr>
+            <td>2</td>
+            <td>May - August</td>
+            <td>Pass</td>
+          </tr>
+            
+          <tr>
+            <td>3</td>
+            <td>September - December</td>
+            <td>Distinction</td>
+          </tr>
+        </table>
+        <p>What the <em>scope</em> attribute has done, is that it shows whether a header cell belongs to either the column, row, or a group of both. In this case the headers belong to the column because it's what is set in the code</p>
+        <hr>
+    
+        <h2>Using the colspan and rowspan</h2>
+        <p>HTML table by using two cell attributes, <strong>colspan</strong> for horizontal spanning and <strong>rowspan</strong> for vertical spanning. The two attributes are assigned numbers greater that zero which shows the number of cells you wish to span.</p>
+        <table>
+          <caption><strong>Table 3 - Colspan and Rowspan Example</strong></caption>
+          <tr>
+              <th>Name</th>
+              <th>Subject</th>
+              <th>Marks</th>
+            </tr>
+            <tr>
+              <td rowspan = "2">Hillary</td> <!--Spans 2 rows-->
+              <td>Advanced Web</td>
+              <td>75</td>
+            </tr>
+            <tr>
+              <td>Operating Systems</td>
+              <td>60</td>
+            </tr>
+                <tr>
+              <td rowspan = "2">Lary</td> <!--Spans 2 rows-->
+              <td>Advanced Web</td>
+              <td>80</td>
+            </tr>
+            <tr>
+              <td>Operating Systems</td>
+              <td>75</td>
+            </tr>
+            <tr>
+              <td colspan="3">Total Average: 72.5</td> <!--Spans 3 columns-->
+            </tr>
+      </table>
+      <hr>
+    
+      <h2>Using the Header, Body and Footer Table Elements</h2>
+      <p>Just like how a website or any other document has three main sections &ndash; the header, body, and footer &ndash; so does a table. In a table they are divided by using attributes namely:</p>
+        <ul>
+          <li>&lt; thead &gt; - provides a separate haeder for the table</li>
+          <li>&lt; tbody &gt; - conatins main content of the table</li>
+          <li>&lt; tfoot &gt; - creates a separete footer for the table</li>
+        </ul>
+
+      <table>
+        <caption><strong>Table 4 - thead, tbody and tfoot Example</strong></caption>
+          <thead>
+            <tr>
+              <th colspan="2">October</th>
+                <th colspan="2">November</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sales</td>
+              <td>Profit</td>
+              <td>Sales</td>
+              <td>Profit</td>
+            </tr>
+            <tr>
+              <td>$200,00</td>
+              <td>$50,000</td>
+              <td>$300,000</td>
+              <td>$70,000</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th colspan= "4">November was more productive</th>
+            </tr>
+          </tfoot>
+        </table>
+    </body>
+</html>

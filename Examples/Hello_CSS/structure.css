@@ -1,0 +1,37 @@
+code{
+    background-color: rgb(244, 151, 89);
+    border-radius: 10px;
+    color: aliceblue;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 24px 15px;
+    text-align: center;
+}
+
+header,
+section, 
+aside,
+footer{
+    margin: 0 2% 25px 2%;
+}
+
+section{
+    float: left;
+    width: 65%;
+}
+
+aside{
+    float: right;
+    width: 25%;
+}
+
+footer{
+    clear: both;
+    margin-bottom: 0;
+}
+
+header{
+    clear: both;
+    margin-bottom: 10px;
+   
+}

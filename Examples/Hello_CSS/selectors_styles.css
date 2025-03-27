@@ -1,0 +1,9 @@
+.synopsis{
+    color: #0f79e2;
+    font-style:italic;
+}
+
+.synopsis em {
+    font-style: normal;
+    color: rgb(226, 77, 40);
+}
